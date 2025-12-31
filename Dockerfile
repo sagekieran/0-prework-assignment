@@ -4,6 +4,7 @@ WORKDIR /app
 
 # Install Jupyter
 RUN pip install --no-cache-dir jupyter
+RUN pip install torch
 
 # Copy notebook files
 COPY . .
